@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "origen": "F1 Tabla 12; descripciones operativas del paquete",
+  "criterios": [
+    {
+      "codigo": "C1",
+      "nombre": "Tarea",
+      "descripcion": "Declaración de la tarea y selección de acción."
+    },
+    {
+      "codigo": "C2",
+      "nombre": "Contexto",
+      "descripcion": "Presencia del contexto solicitado."
+    },
+    {
+      "codigo": "C3",
+      "nombre": "Destinatario",
+      "descripcion": "Declaración del destinatario cuando aplica."
+    },
+    {
+      "codigo": "C4",
+      "nombre": "Restricciones",
+      "descripcion": "Declaración de condiciones requeridas."
+    },
+    {
+      "codigo": "C5",
+      "nombre": "Formato",
+      "descripcion": "Selección de tipo de salida y detalle requerido."
+    },
+    {
+      "codigo": "C6",
+      "nombre": "Seguridad",
+      "descripcion": "Revisión preventiva de coincidencias, sin garantía de privacidad."
+    }
+  ]
+}

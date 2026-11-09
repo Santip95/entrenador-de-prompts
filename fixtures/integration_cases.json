@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "casos": [
+    {
+      "id": "CP-12",
+      "historia": "HU-06",
+      "aceptacion": [
+        "AT-15",
+        "AT-16"
+      ],
+      "pasos": [
+        "Crear práctica D01 y guardar CP-31 como V1.",
+        "Guardar CP-01 como V2.",
+        "Leer nuevamente V1 y comparar las dos versiones."
+      ],
+      "esperado": {
+        "versiones": 2,
+        "v1_sin_cambios": true,
+        "v1_cumplidos": 3,
+        "v2_cumplidos": 6,
+        "aplicables": 6,
+        "delta_pp": 50,
+        "resolucion": 100,
+        "alertas_nuevas": 0
+      }
+    },
+    {
+      "id": "INT-02",
+      "aceptacion": [
+        "SEC-01"
+      ],
+      "pasos": [
+        "Iniciar la misma cuenta en dos navegadores.",
+        "Bloquearla desde otra cuenta administradora.",
+        "Pedir historial desde ambos navegadores.",
+        "Desbloquear y volver a intentar con las cookies previas."
+      ],
+      "esperado": {
+        "tokens_previos_rechazados": true,
+        "requiere_nuevo_login": true
+      }
+    },
+    {
+      "id": "INT-03",
+      "aceptacion": [
+        "AT-18",
+        "AT-23"
+      ],
+      "pasos": [
+        "Guardar V1.",
+        "Publicar nueva versión de regla C2 con condición distinta.",
+        "Revisar de nuevo y guardar V2.",
+        "Comparar y releer V1."
+      ],
+      "esperado": {
+        "v1_sin_cambios": true,
+        "comparable": false,
+        "delta_pp": null,
+        "resolucion": null
+      }
+    },
+    {
+      "id": "INT-04",
+      "aceptacion": [
+        "SEC-10"
+      ],
+      "pasos": [
+        "Forzar fallo controlado tras insertar version_prompt y antes de insertar resultado.",
+        "Consultar tablas en la base de pruebas."
+      ],
+      "esperado": {
+        "nuevas_versiones": 0,
+        "nuevas_evaluaciones": 0,
+        "nuevos_resultados": 0
+      }
+    },
+    {
+      "id": "INT-05",
+      "aceptacion": [
+        "AT-07",
+        "SEC-11"
+      ],
+      "pasos": [
+        "Preparar objetivo propio con persona@example.invalid.",
+        "Intentar crear sin confirmación.",
+        "Confirmar y crear.",
+        "Eliminar práctica, restaurar una copia anterior y reaplicar diario."
+      ],
+      "esperado": {
+        "sin_confirmar_no_persiste": true,
+        "tras_borrado_no_reaparece": true
+      }
+    }
+  ]
+}

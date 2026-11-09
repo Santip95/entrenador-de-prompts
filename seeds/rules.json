@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "motor_version": "1.1.0",
+  "estado_validacion": "pendiente_revision_externa",
+  "reglas": [
+    {
+      "codigo": "C1-v1",
+      "criterio_codigo": "C1",
+      "version": 1,
+      "tipo": "tarea_declarada",
+      "activa": true,
+      "parametros": {
+        "combinacion": "AND"
+      },
+      "mensajes": {
+        "cumple": "Tarea declarada y acción seleccionada.",
+        "pendiente": "Falta declarar la tarea o elegir una acción admitida para este ejercicio.",
+        "accion": "Completá la tarea y revisá la acción seleccionada.",
+        "no_aplica": "Este criterio no corresponde a la configuración de esta práctica.",
+        "confirmada": null
+      }
+    },
+    {
+      "codigo": "C2-v1",
+      "criterio_codigo": "C2",
+      "version": 1,
+      "tipo": "contexto_requerido",
+      "activa": true,
+      "parametros": {
+        "combinacion": "AND"
+      },
+      "mensajes": {
+        "cumple": "Contexto requerido completo.",
+        "pendiente": "Falta completar información de contexto solicitada por el ejercicio.",
+        "accion": "Completá los campos de contexto indicados.",
+        "no_aplica": "Este criterio no corresponde a la configuración de esta práctica.",
+        "confirmada": null
+      }
+    },
+    {
+      "codigo": "C3-v1",
+      "criterio_codigo": "C3",
+      "version": 1,
+      "tipo": "destinatario_declarado",
+      "activa": true,
+      "parametros": {
+        "combinacion": "AND"
+      },
+      "mensajes": {
+        "cumple": "Destinatario declarado.",
+        "pendiente": "No declaraste a quién estará dirigida la respuesta.",
+        "accion": "Indicá el destinatario.",
+        "no_aplica": "Este criterio no corresponde a la configuración de esta práctica.",
+        "confirmada": null
+      }
+    },
+    {
+      "codigo": "C4-v1",
+      "criterio_codigo": "C4",
+      "version": 1,
+      "tipo": "restricciones_declaradas",
+      "activa": true,
+      "parametros": {
+        "combinacion": "AND"
+      },
+      "mensajes": {
+        "cumple": "Restricciones requeridas declaradas.",
+        "pendiente": "Quedan condiciones del ejercicio sin declarar.",
+        "accion": "Revisá las restricciones indicadas.",
+        "no_aplica": "Este criterio no corresponde a la configuración de esta práctica.",
+        "confirmada": null
+      }
+    },
+    {
+      "codigo": "C5-v1",
+      "criterio_codigo": "C5",
+      "version": 1,
+      "tipo": "formato_declarado",
+      "activa": true,
+      "parametros": {
+        "combinacion": "AND"
+      },
+      "mensajes": {
+        "cumple": "Formato declarado.",
+        "pendiente": "Falta elegir un formato admitido o completar su detalle.",
+        "accion": "Elegí el formato y completá el detalle cuando corresponda.",
+        "no_aplica": "Este criterio no corresponde a la configuración de esta práctica.",
+        "confirmada": null
+      }
+    },
+    {
+      "codigo": "C6-v1",
+      "criterio_codigo": "C6",
+      "version": 1,
+      "tipo": "revision_preventiva",
+      "activa": true,
+      "parametros": {
+        "detectores_activos": [
+          "email_v1",
+          "telefono_ar_v1",
+          "dni_etiquetado_v1"
+        ]
+      },
+      "mensajes": {
+        "cumple": "No se detectaron coincidencias de los patrones configurados.",
+        "pendiente": "Se detectaron patrones que podrían corresponder a datos sensibles.",
+        "accion": "Editá el contenido o confirmá cada coincidencia después de revisarla.",
+        "no_aplica": "Este criterio no corresponde a la configuración de esta práctica.",
+        "confirmada": "Revisión de coincidencias confirmada por vos; esto no garantiza que el contenido sea seguro."
+      }
+    }
+  ],
+  "detectores_permitidos": [
+    {
+      "codigo": "email_v1",
+      "tipo": "correo",
+      "regex": "(?i)(?<![a-z0-9._%+\\-])[a-z0-9._%+\\-]+@[a-z0-9.\\-]+\\.[a-z]{2,}(?![a-z0-9_\\-])",
+      "grupo_valor": 0,
+      "digitos_min": null,
+      "digitos_max": null
+    },
+    {
+      "codigo": "telefono_ar_v1",
+      "tipo": "telefono",
+      "regex": "(?i)(?:\\+54[ \\t.-]*|(?:tel[eé]fono|tel|celular)[ \\t]*[:=]?[ \\t]*)(?P<num>[0-9][0-9 \\t().-]{6,26}[0-9])",
+      "grupo_valor": "num",
+      "digitos_min": 8,
+      "digitos_max": 13
+    },
+    {
+      "codigo": "dni_etiquetado_v1",
+      "tipo": "documento",
+      "regex": "(?i)\\b(?:dni|documento)[ \\t]*[:=]?[ \\t]*(?P<num>[0-9][0-9. \\t-]{5,14}[0-9])\\b",
+      "grupo_valor": "num",
+      "digitos_min": 7,
+      "digitos_max": 8
+    },
+    {
+      "codigo": "secuencia_numerica_7_8_10_v1",
+      "tipo": "secuencia_numerica",
+      "regex": "(?<![0-9])(?:[0-9]{10}|[0-9]{8}|[0-9]{7})(?![0-9])",
+      "grupo_valor": 0,
+      "digitos_min": null,
+      "digitos_max": null
+    }
+  ]
+}

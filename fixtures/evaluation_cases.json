@@ -1,0 +1,1792 @@
+{
+  "schema_version": 1,
+  "naturaleza": "Resultados esperados, no ejecución de una aplicación",
+  "casos": [
+    {
+      "id": "CP-01",
+      "descripcion": "Tarea y resto de componentes completos",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-02",
+      "descripcion": "Tarea solo espacios",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "   ",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "revisar",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-03",
+      "descripcion": "Fecha requerida presente",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-04",
+      "descripcion": "Fecha requerida vacía",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": ""
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "revisar",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-05",
+      "descripcion": "Contexto y destinatario no aplicables",
+      "desafio_codigo": "D03_IDEAS",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Proponé actividades creativas.",
+            "accion_id": "proponer"
+          },
+          "contexto": {
+            "texto": "",
+            "campos": {}
+          },
+          "destinatario": {
+            "texto": ""
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "lista",
+            "detalle": "Presentar cinco opciones numeradas."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "no_aplica",
+          "C3": "no_aplica",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 4,
+        "aplicables": 4,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-06",
+      "descripcion": "Destinatario declarado",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-07",
+      "descripcion": "Formato y detalle completos",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-08",
+      "descripcion": "Restricción requerida no seleccionada",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": []
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "revisar",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-09",
+      "descripcion": "Correo ficticio detectado",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para persona@example.invalid.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "advertencia"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": [
+          {
+            "tipo": "correo",
+            "campo": "componentes.tarea.texto"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CP-10",
+      "descripcion": "Teléfono sintáctico ficticio detectado",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Teléfono: +54 9 000 000-0000",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "advertencia"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": [
+          {
+            "tipo": "telefono",
+            "campo": "componentes.contexto.texto"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CP-11",
+      "descripcion": "Año y cantidad aislados no generan alertas",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Actividad de 2026 con 25 elementos.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-13",
+      "descripcion": "Acción sin seleccionar",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": null
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "revisar",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-14",
+      "descripcion": "Acción conocida pero distinta de la requerida",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "resumir"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "revisar",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-15",
+      "descripcion": "Destinatario vacío",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": ""
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "revisar",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-16",
+      "descripcion": "Formato conocido pero no admitido por el desafío",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "lista",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "revisar",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-17",
+      "descripcion": "Formato sin elegir",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": null,
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "revisar",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-18",
+      "descripcion": "Detalle de formato ausente",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": ""
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "revisar",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-19",
+      "descripcion": "DNI ficticio con etiqueta",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "DNI: 00.000.000",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "advertencia"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": [
+          {
+            "tipo": "documento",
+            "campo": "componentes.contexto.texto"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CP-20",
+      "descripcion": "Correo confirmado conserva coincidencia",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para persona@example.invalid.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": true,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": [
+          {
+            "tipo": "correo",
+            "campo": "componentes.tarea.texto"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CP-21",
+      "descripcion": "Modo libre con componentes declarados",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "libre",
+        "texto_libre": "Escribí un correo para coordinar una actividad ficticia.",
+        "componentes_confirmados": true,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      },
+      "limitacion": "La prueba acredita declaraciones, no correspondencia semántica con el texto libre."
+    },
+    {
+      "id": "CP-22",
+      "descripcion": "Modo libre sin confirmar componentes",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "libre",
+        "texto_libre": "Escribí un correo para coordinar una actividad ficticia.",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "error": "componentes_sin_confirmar"
+      }
+    },
+    {
+      "id": "CP-23",
+      "descripcion": "Correo solo en texto libre",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "libre",
+        "texto_libre": "Escribí a persona@example.invalid.",
+        "componentes_confirmados": true,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "advertencia"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": [
+          {
+            "tipo": "correo",
+            "campo": "texto_libre"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CP-24",
+      "descripcion": "Correo en criterio no aplicable igualmente alerta",
+      "desafio_codigo": "D03_IDEAS",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Proponé actividades creativas.",
+            "accion_id": "proponer"
+          },
+          "contexto": {
+            "texto": "",
+            "campos": {}
+          },
+          "destinatario": {
+            "texto": "persona@example.invalid"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "lista",
+            "detalle": "Presentar cinco opciones numeradas."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "no_aplica",
+          "C3": "no_aplica",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "advertencia"
+        },
+        "cumplidos": 3,
+        "aplicables": 4,
+        "cumplimiento_mostrado": 75.0,
+        "coincidencias": [
+          {
+            "tipo": "correo",
+            "campo": "componentes.destinatario.texto"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CP-25",
+      "descripcion": "Cadena breve no prueba calidad",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "x",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      },
+      "limitacion": "El motor solo comprueba presencia y acción declarada; debe explicarse al revisor."
+    },
+    {
+      "id": "CP-26",
+      "descripcion": "Espacios Unicode no equivalen a contenido",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": " \t\n",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "revisar",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 5,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 83.3,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-27",
+      "descripcion": "DNI aislado sin etiqueta fuera de cobertura inicial",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "00000000",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      },
+      "limitacion": "Falso negativo conocido del detector contextual; no prometer cobertura total."
+    },
+    {
+      "id": "CP-28",
+      "descripcion": "Correo ofuscado fuera de cobertura inicial",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "persona arroba ejemplo punto invalid",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      },
+      "limitacion": "Falso negativo conocido; requiere criterio humano."
+    },
+    {
+      "id": "CP-29",
+      "descripcion": "Selección inexistente es error de esquema",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "regla_inexistente"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "error": "seleccion_desconocida"
+      }
+    },
+    {
+      "id": "CP-30",
+      "descripcion": "Resumen sin detalle de formato obligatorio",
+      "desafio_codigo": "D02_RESUMEN",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Resumí el texto de referencia.",
+            "accion_id": "resumir"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "texto_base": "En una localidad ficticia se realizó una jornada de intercambio de libros. Hubo mesas de lectura y un cierre con relatos."
+            }
+          },
+          "destinatario": {
+            "texto": "Personas adultas que no conocen la actividad"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "solo_fuente"
+            ]
+          },
+          "formato": {
+            "tipo": "resumen",
+            "detalle": ""
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-31",
+      "descripcion": "Tres condiciones faltantes en versión inicial",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": ""
+            }
+          },
+          "destinatario": {
+            "texto": ""
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": ""
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "revisar",
+          "C3": "revisar",
+          "C4": "cumple",
+          "C5": "revisar",
+          "C6": "cumple"
+        },
+        "cumplidos": 3,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 50.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-32",
+      "descripcion": "Transferencia con requisitos completos",
+      "desafio_codigo": "D04_CORREO_INVITACION",
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo de invitación a una actividad ficticia.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Invitar a una jornada de lectura ficticia",
+              "fecha": "2030-06-12"
+            }
+          },
+          "destinatario": {
+            "texto": "Personas interesadas en la actividad ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "cumple",
+          "C3": "cumple",
+          "C4": "cumple",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 6,
+        "aplicables": 6,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      }
+    },
+    {
+      "id": "CP-33",
+      "descripcion": "Objetivo propio con C2/C3/C4 no aplicables",
+      "desafio_codigo": null,
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Explicá una idea de mi interés.",
+            "accion_id": "explicar"
+          },
+          "contexto": {
+            "texto": "",
+            "campos": {}
+          },
+          "destinatario": {
+            "texto": ""
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": []
+          },
+          "formato": {
+            "tipo": "texto",
+            "detalle": ""
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "no_aplica",
+          "C3": "no_aplica",
+          "C4": "no_aplica",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 3,
+        "aplicables": 3,
+        "cumplimiento_mostrado": 100.0,
+        "coincidencias": []
+      },
+      "configuracion_propia": {
+        "C1": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "acciones_permitidas": [
+              "redactar",
+              "resumir",
+              "proponer",
+              "explicar",
+              "otro"
+            ]
+          }
+        },
+        "C2": {
+          "aplica": false,
+          "obligatorio": false,
+          "parametros": {
+            "campos_requeridos": [],
+            "exigir_texto": true
+          }
+        },
+        "C3": {
+          "aplica": false,
+          "obligatorio": false,
+          "parametros": {}
+        },
+        "C4": {
+          "aplica": false,
+          "obligatorio": false,
+          "parametros": {
+            "selecciones_requeridas": [],
+            "exigir_texto": true
+          }
+        },
+        "C5": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "tipos_permitidos": [
+              "correo",
+              "lista",
+              "resumen",
+              "tabla",
+              "texto"
+            ],
+            "exigir_detalle": false
+          }
+        },
+        "C6": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        }
+      }
+    },
+    {
+      "id": "CP-34",
+      "descripcion": "Objetivo propio exige contexto seleccionado",
+      "desafio_codigo": null,
+      "entrada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Explicá una idea de mi interés.",
+            "accion_id": "explicar"
+          },
+          "contexto": {
+            "texto": "",
+            "campos": {}
+          },
+          "destinatario": {
+            "texto": ""
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": []
+          },
+          "formato": {
+            "tipo": "texto",
+            "detalle": ""
+          }
+        }
+      },
+      "confirmar_todas": false,
+      "esperado": {
+        "estados": {
+          "C1": "cumple",
+          "C2": "revisar",
+          "C3": "no_aplica",
+          "C4": "no_aplica",
+          "C5": "cumple",
+          "C6": "cumple"
+        },
+        "cumplidos": 3,
+        "aplicables": 4,
+        "cumplimiento_mostrado": 75.0,
+        "coincidencias": []
+      },
+      "configuracion_propia": {
+        "C1": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "acciones_permitidas": [
+              "redactar",
+              "resumir",
+              "proponer",
+              "explicar",
+              "otro"
+            ]
+          }
+        },
+        "C2": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "campos_requeridos": [],
+            "exigir_texto": true
+          }
+        },
+        "C3": {
+          "aplica": false,
+          "obligatorio": false,
+          "parametros": {}
+        },
+        "C4": {
+          "aplica": false,
+          "obligatorio": false,
+          "parametros": {
+            "selecciones_requeridas": [],
+            "exigir_texto": true
+          }
+        },
+        "C5": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "tipos_permitidos": [
+              "correo",
+              "lista",
+              "resumen",
+              "tabla",
+              "texto"
+            ],
+            "exigir_detalle": false
+          }
+        },
+        "C6": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        }
+      }
+    }
+  ]
+}

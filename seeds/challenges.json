@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "origen": "Material ficticio preparado para implementar el alcance de F1; no son casos ya validados",
+  "estado_validacion": "pendiente_revision_externa",
+  "desafios": [
+    {
+      "codigo": "D01_CORREO_REUNION",
+      "titulo": "Solicitar una reunión",
+      "consigna": "Construí un prompt para pedir la redacción de un correo que solicite una reunión a la coordinación de una organización ficticia. Declarar tarea, finalidad, fecha de referencia y destinatario. Elegir la condición de usar datos ficticios y el formato correo, con un detalle de estructura. No escribas datos personales reales.",
+      "uso_sugerido": "linea_base",
+      "revision": 1,
+      "estado": "publicado",
+      "configuracion": {
+        "C1": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "acciones_permitidas": [
+              "redactar"
+            ]
+          }
+        },
+        "C2": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "campos_requeridos": [
+              "finalidad",
+              "fecha"
+            ],
+            "exigir_texto": false
+          }
+        },
+        "C3": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        },
+        "C4": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "selecciones_requeridas": [
+              "sin_identificadores"
+            ],
+            "exigir_texto": false
+          }
+        },
+        "C5": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "tipos_permitidos": [
+              "correo"
+            ],
+            "exigir_detalle": true
+          }
+        },
+        "C6": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        }
+      }
+    },
+    {
+      "codigo": "D02_RESUMEN",
+      "titulo": "Resumir una actividad comunitaria",
+      "consigna": "Construí un prompt para resumir un texto ficticio sobre una actividad comunitaria para un público que no lo conoce. Incluir texto de referencia, destinatario y restricción de trabajar solo con la fuente. Elegir formato resumen. El motor revisará esas declaraciones, no la fidelidad de un resumen generado.",
+      "uso_sugerido": "practica",
+      "revision": 1,
+      "estado": "publicado",
+      "configuracion": {
+        "C1": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "acciones_permitidas": [
+              "resumir"
+            ]
+          }
+        },
+        "C2": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "campos_requeridos": [
+              "texto_base"
+            ],
+            "exigir_texto": false
+          }
+        },
+        "C3": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        },
+        "C4": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "selecciones_requeridas": [
+              "solo_fuente"
+            ],
+            "exigir_texto": false
+          }
+        },
+        "C5": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "tipos_permitidos": [
+              "resumen"
+            ],
+            "exigir_detalle": false
+          }
+        },
+        "C6": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        }
+      }
+    },
+    {
+      "codigo": "D03_IDEAS",
+      "titulo": "Proponer actividades creativas",
+      "consigna": "Construí un prompt para proponer actividades creativas en una lista. Elegir el uso de datos ficticios y detallar cómo presentar la lista. En este ejercicio contexto y destinatario no son criterios aplicables. No se evalúa la originalidad de las ideas.",
+      "uso_sugerido": "practica_no_aplica",
+      "revision": 1,
+      "estado": "publicado",
+      "configuracion": {
+        "C1": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "acciones_permitidas": [
+              "proponer"
+            ]
+          }
+        },
+        "C2": {
+          "aplica": false,
+          "obligatorio": false,
+          "parametros": {
+            "campos_requeridos": [],
+            "exigir_texto": false
+          }
+        },
+        "C3": {
+          "aplica": false,
+          "obligatorio": false,
+          "parametros": {}
+        },
+        "C4": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "selecciones_requeridas": [
+              "sin_identificadores"
+            ],
+            "exigir_texto": false
+          }
+        },
+        "C5": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "tipos_permitidos": [
+              "lista"
+            ],
+            "exigir_detalle": true
+          }
+        },
+        "C6": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        }
+      }
+    },
+    {
+      "codigo": "D04_CORREO_INVITACION",
+      "titulo": "Preparar una invitación",
+      "consigna": "Construí un prompt para pedir la redacción de un correo de invitación a una actividad de una organización ficticia. Declarar tarea, finalidad, fecha de referencia y destinatario. Elegir uso de datos ficticios y formato correo con detalle de estructura. Resolver sin copiar el prompt del ejercicio anterior.",
+      "uso_sugerido": "transferencia_propuesta",
+      "revision": 1,
+      "estado": "publicado",
+      "configuracion": {
+        "C1": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "acciones_permitidas": [
+              "redactar"
+            ]
+          }
+        },
+        "C2": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "campos_requeridos": [
+              "finalidad",
+              "fecha"
+            ],
+            "exigir_texto": false
+          }
+        },
+        "C3": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        },
+        "C4": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "selecciones_requeridas": [
+              "sin_identificadores"
+            ],
+            "exigir_texto": false
+          }
+        },
+        "C5": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {
+            "tipos_permitidos": [
+              "correo"
+            ],
+            "exigir_detalle": true
+          }
+        },
+        "C6": {
+          "aplica": true,
+          "obligatorio": true,
+          "parametros": {}
+        }
+      }
+    }
+  ]
+}

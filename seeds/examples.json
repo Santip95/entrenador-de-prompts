@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "usar_solo_en_demo_o_tests": true,
+  "ejemplos": [
+    {
+      "codigo": "D01_CORREO_REUNION_EJ",
+      "desafio_codigo": "D01_CORREO_REUNION",
+      "proposito": "Ejemplo ficticio de versión incompleta y completa estructuralmente; no mostrar como solución antes de la validación.",
+      "version_inicial": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": ""
+            }
+          },
+          "destinatario": {
+            "texto": ""
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": ""
+          }
+        }
+      },
+      "estados_iniciales": {
+        "C1": "cumple",
+        "C2": "revisar",
+        "C3": "revisar",
+        "C4": "cumple",
+        "C5": "revisar",
+        "C6": "cumple"
+      },
+      "version_revisada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo para solicitar una reunión.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Coordinar una actividad comunitaria ficticia",
+              "fecha": "2030-05-10"
+            }
+          },
+          "destinatario": {
+            "texto": "Coordinación de la organización ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "estados_revisados": {
+        "C1": "cumple",
+        "C2": "cumple",
+        "C3": "cumple",
+        "C4": "cumple",
+        "C5": "cumple",
+        "C6": "cumple"
+      }
+    },
+    {
+      "codigo": "D02_RESUMEN_EJ",
+      "desafio_codigo": "D02_RESUMEN",
+      "proposito": "Ejemplo ficticio de versión incompleta y completa estructuralmente; no mostrar como solución antes de la validación.",
+      "version_inicial": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Resumí el texto de referencia.",
+            "accion_id": "resumir"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "texto_base": "En una localidad ficticia se realizó una jornada de intercambio de libros. Hubo mesas de lectura y un cierre con relatos."
+            }
+          },
+          "destinatario": {
+            "texto": "Personas adultas que no conocen la actividad"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": []
+          },
+          "formato": {
+            "tipo": "resumen",
+            "detalle": ""
+          }
+        }
+      },
+      "estados_iniciales": {
+        "C1": "cumple",
+        "C2": "cumple",
+        "C3": "cumple",
+        "C4": "revisar",
+        "C5": "cumple",
+        "C6": "cumple"
+      },
+      "version_revisada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Resumí el texto de referencia.",
+            "accion_id": "resumir"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "texto_base": "En una localidad ficticia se realizó una jornada de intercambio de libros. Hubo mesas de lectura y un cierre con relatos."
+            }
+          },
+          "destinatario": {
+            "texto": "Personas adultas que no conocen la actividad"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "solo_fuente"
+            ]
+          },
+          "formato": {
+            "tipo": "resumen",
+            "detalle": ""
+          }
+        }
+      },
+      "estados_revisados": {
+        "C1": "cumple",
+        "C2": "cumple",
+        "C3": "cumple",
+        "C4": "cumple",
+        "C5": "cumple",
+        "C6": "cumple"
+      }
+    },
+    {
+      "codigo": "D03_IDEAS_EJ",
+      "desafio_codigo": "D03_IDEAS",
+      "proposito": "Ejemplo ficticio de versión incompleta y completa estructuralmente; no mostrar como solución antes de la validación.",
+      "version_inicial": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Proponé actividades creativas.",
+            "accion_id": "proponer"
+          },
+          "contexto": {
+            "texto": "",
+            "campos": {}
+          },
+          "destinatario": {
+            "texto": ""
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "lista",
+            "detalle": ""
+          }
+        }
+      },
+      "estados_iniciales": {
+        "C1": "cumple",
+        "C2": "no_aplica",
+        "C3": "no_aplica",
+        "C4": "cumple",
+        "C5": "revisar",
+        "C6": "cumple"
+      },
+      "version_revisada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Proponé actividades creativas.",
+            "accion_id": "proponer"
+          },
+          "contexto": {
+            "texto": "",
+            "campos": {}
+          },
+          "destinatario": {
+            "texto": ""
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "lista",
+            "detalle": "Presentar cinco opciones numeradas."
+          }
+        }
+      },
+      "estados_revisados": {
+        "C1": "cumple",
+        "C2": "no_aplica",
+        "C3": "no_aplica",
+        "C4": "cumple",
+        "C5": "cumple",
+        "C6": "cumple"
+      }
+    },
+    {
+      "codigo": "D04_CORREO_INVITACION_EJ",
+      "desafio_codigo": "D04_CORREO_INVITACION",
+      "proposito": "Ejemplo ficticio de versión incompleta y completa estructuralmente; no mostrar como solución antes de la validación.",
+      "version_inicial": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo de invitación a una actividad ficticia.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "",
+              "fecha": "2030-06-12"
+            }
+          },
+          "destinatario": {
+            "texto": "Personas interesadas en la actividad ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "estados_iniciales": {
+        "C1": "cumple",
+        "C2": "revisar",
+        "C3": "cumple",
+        "C4": "cumple",
+        "C5": "cumple",
+        "C6": "cumple"
+      },
+      "version_revisada": {
+        "modo": "guiado",
+        "texto_libre": "",
+        "componentes_confirmados": false,
+        "componentes": {
+          "tarea": {
+            "texto": "Redactá un correo de invitación a una actividad ficticia.",
+            "accion_id": "redactar"
+          },
+          "contexto": {
+            "texto": "Situación ficticia para practicar.",
+            "campos": {
+              "finalidad": "Invitar a una jornada de lectura ficticia",
+              "fecha": "2030-06-12"
+            }
+          },
+          "destinatario": {
+            "texto": "Personas interesadas en la actividad ficticia"
+          },
+          "restricciones": {
+            "texto": "",
+            "selecciones": [
+              "sin_identificadores"
+            ]
+          },
+          "formato": {
+            "tipo": "correo",
+            "detalle": "Incluir asunto, saludo y cierre."
+          }
+        }
+      },
+      "estados_revisados": {
+        "C1": "cumple",
+        "C2": "cumple",
+        "C3": "cumple",
+        "C4": "cumple",
+        "C5": "cumple",
+        "C6": "cumple"
+      }
+    }
+  ]
+}

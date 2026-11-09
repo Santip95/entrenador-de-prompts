@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "perfil_codigo": "OBJETIVO_PROPIO",
+  "nota": "aplica de C2/C3/C4 se elige al crear la práctica; la plantilla inicial los deja no aplicables.",
+  "configuracion_base": {
+    "C1": {
+      "aplica": true,
+      "obligatorio": true,
+      "parametros": {
+        "acciones_permitidas": [
+          "redactar",
+          "resumir",
+          "proponer",
+          "explicar",
+          "otro"
+        ]
+      }
+    },
+    "C2": {
+      "aplica": false,
+      "obligatorio": false,
+      "parametros": {
+        "campos_requeridos": [],
+        "exigir_texto": true
+      }
+    },
+    "C3": {
+      "aplica": false,
+      "obligatorio": false,
+      "parametros": {}
+    },
+    "C4": {
+      "aplica": false,
+      "obligatorio": false,
+      "parametros": {
+        "selecciones_requeridas": [],
+        "exigir_texto": true
+      }
+    },
+    "C5": {
+      "aplica": true,
+      "obligatorio": true,
+      "parametros": {
+        "tipos_permitidos": [
+          "correo",
+          "lista",
+          "resumen",
+          "tabla",
+          "texto"
+        ],
+        "exigir_detalle": false
+      }
+    },
+    "C6": {
+      "aplica": true,
+      "obligatorio": true,
+      "parametros": {}
+    }
+  }
+}

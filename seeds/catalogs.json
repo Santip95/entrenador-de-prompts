@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "acciones": {
+    "redactar": "Redactar",
+    "resumir": "Resumir",
+    "proponer": "Proponer",
+    "explicar": "Explicar",
+    "otro": "Otra acción declarada"
+  },
+  "formatos": {
+    "correo": "Correo",
+    "lista": "Lista",
+    "resumen": "Resumen",
+    "tabla": "Tabla",
+    "texto": "Texto"
+  },
+  "restricciones": {
+    "sin_identificadores": "Usar solo datos ficticios y no incluir identificadores personales",
+    "solo_fuente": "Trabajar únicamente con el texto de referencia proporcionado"
+  },
+  "campos_contexto": {
+    "finalidad": "Finalidad",
+    "fecha": "Fecha de referencia",
+    "texto_base": "Texto de referencia"
+  }
+}
