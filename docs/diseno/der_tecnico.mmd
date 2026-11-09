@@ -1,0 +1,89 @@
+erDiagram
+    direction TB
+    USUARIO ||--o{ PRACTICA : posee
+    DESAFIO o|--o{ PRACTICA : origina
+    PRACTICA ||--o{ VERSION_PROMPT : conserva
+    VERSION_PROMPT ||--|| EVALUACION : recibe
+    EVALUACION ||--|{ RESULTADO : contiene
+    CRITERIO ||--o{ RESULTADO : identifica
+    CRITERIO ||--o{ REGLA : versiona
+    REGLA o|--o{ RESULTADO : fundamenta
+    DESAFIO ||--|{ DESAFIO_CRITERIO : configura
+    CRITERIO ||--o{ DESAFIO_CRITERIO : aplica
+    VERSION_PROMPT ||--o{ ALERTA_SENSIBLE : conserva
+    USUARIO {
+        uuid id PK
+        string correo UK
+        string rol
+        string estado
+        int auth_epoch
+    }
+    PRACTICA {
+        uuid id PK
+        uuid usuario_id FK
+        uuid desafio_id FK
+        string objetivo
+        string modo
+        jsonb configuracion_propia
+        uuid request_id
+    }
+    VERSION_PROMPT {
+        uuid id PK
+        uuid practica_id FK
+        int numero
+        jsonb componentes
+        string texto
+        uuid request_id
+    }
+    EVALUACION {
+        uuid id PK
+        uuid version_id FK,UK
+        jsonb snapshot
+        string firma_comparacion
+        string motor_version
+    }
+    RESULTADO {
+        uuid evaluacion_id PK,FK
+        uuid criterio_id PK,FK
+        uuid regla_id FK
+        string estado
+        jsonb evidencia
+        string mensaje
+    }
+    CRITERIO {
+        uuid id PK
+        string codigo UK
+        string nombre
+    }
+    REGLA {
+        uuid id PK
+        uuid criterio_id FK
+        int version
+        string tipo
+        jsonb parametros
+        jsonb mensajes
+        boolean activa
+    }
+    DESAFIO {
+        uuid id PK
+        string codigo UK
+        string titulo
+        string consigna
+        string estado
+        int revision
+    }
+    DESAFIO_CRITERIO {
+        uuid desafio_id PK,FK
+        uuid criterio_id PK,FK
+        boolean obligatorio
+        jsonb configuracion
+    }
+    ALERTA_SENSIBLE {
+        uuid id PK
+        uuid version_id FK
+        string tipo
+        string campo
+        string estado
+        string huella
+        string clave_version
+    }

@@ -1,0 +1,10 @@
+flowchart TB
+    U["Navegador · React"] -->|"HTTPS · JSON · cookie"| A["FastAPI · acceso y casos de uso"]
+    A --> M["Motor determinístico"]
+    A --> C["Constructor y comparación"]
+    A --> R["Repositorios y transacciones"]
+    R --> DB["PostgreSQL"]
+    A --> SMTP["SMTP · recuperación"]
+    DB --> J["Trabajo de respaldo y cifrado"]
+    J --> B2["B2 privado · máximo 30 días"]
+    J --> D["Diario de borrados cifrado"]

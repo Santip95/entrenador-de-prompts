@@ -1,0 +1,39 @@
+erDiagram
+    direction TB
+    USUARIO ||--o{ SESION : inicia
+    USUARIO ||--o{ RECUPERACION_ACCESO : solicita
+    USUARIO o|--o{ EVENTO_AUDITORIA : origina
+    USUARIO {
+        uuid id PK
+        string correo UK
+        string clave_hash
+        string estado
+        string rol
+        int auth_epoch
+        datetime bloqueado_hasta
+    }
+    SESION {
+        uuid id PK
+        uuid usuario_id FK
+        string token_hash UK
+        int auth_epoch_emitido
+        datetime ultimo_uso_en
+        datetime expira_en
+        datetime revocada_en
+    }
+    RECUPERACION_ACCESO {
+        uuid id PK
+        uuid usuario_id FK
+        string token_hash UK
+        datetime expira_en
+        datetime usado_en
+    }
+    EVENTO_AUDITORIA {
+        uuid id PK
+        uuid actor_id FK
+        string evento
+        string recurso_tipo
+        uuid recurso_id
+        jsonb metadatos
+        datetime creado_en
+    }
