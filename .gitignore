@@ -1,0 +1,52 @@
+# Configuración privada; sólo se versiona la plantilla sin secretos.
+.env
+.env.*
+!.env.example
+.pgpass
+pgpass.conf
+credenciales.json
+
+# Dependencias y resultados regenerables.
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vite/
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+test-results/
+playwright-report/
+
+# Datos, herramientas descargadas, reportes locales, respaldos y claves.
+local-data/
+backups/
+*.log
+*.dump
+*.backup
+*.key
+*.agekey
+*.age
+*.fernet
+*.pem
+*.p12
+*.pfx
+
+# Configuración personal del editor y del sistema.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
